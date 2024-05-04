@@ -1,3 +1,28 @@
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/inter-400.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/inter-700.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 900;
+  src: url("../fonts/inter-900.woff2") format("woff2");
+  font-display: swap;
+}
+
 /* Common */
 
 *,
@@ -16,4 +41,130 @@
 	border: 0;
 	clip: rect(0 0 0 0);
 	overflow: hidden;
+}
+
+/* Page */
+
+.page {
+  height: 100%;
+  color: #565c66;
+  background-color: #feafc3;
+
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  line-height: 137%;
+}
+
+.page-body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  width: 1170px;
+  margin: 0 auto;
+}
+
+.page-main {
+  flex-grow: 1;
+}
+
+
+/* Section */
+
+.section-title {
+  margin: 0;
+  margin-bottom: 56px;
+  font-size: 32px;
+  line-height: 144%;
+}
+
+.section-desk {
+  margin: 0;
+  color: #2d3440;
+  font-size: 18px;
+  line-height: 133%;
+}
+
+/* Button */
+
+.button {
+  display: inline-block;
+  margin: 0;
+  padding: 12px 32px;
+  color: #2d3440;
+  background-color: #fcfcfc;
+  border: 4px solid rgba(252, 252, 252, 0.4);
+  border-radius: 26px;
+  box-shadow: 0 4px 12px 0 rgba(45, 52, 64, 0.1);
+}
+
+.additional-button {
+  background-color: #ff2f64;
+  border-color: rgba(255, 47, 100, 0.3);
+  color: #fcfcfc;
+}
+
+
+.blog {
+  background-image: url("../image/index/background-blog.png");
+}
+
+.delivery {
+  background-image: url("../image/index/background-delivery.png");
+}
+
+.feedback {
+  background-image: url("../image/index/background-feedback.png");
+}
+
+/* Header */
+
+.header-nav {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 24px 98px;
+  justify-content: space-between;
+}
+
+.nav-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.logo-link {
+  margin-right: 16px;
+}
+
+.logo-image {
+  display: block;
+}
+
+.site-menu {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+
+  font: inherit;
+  list-style-type: none ;
+}
+
+.site-menu-item {
+  display: flex;
+  align-items: center;
+}
+
+.site-menu-link {
+  display: block;
+  padding: 8px 16px;
+
+  color: #2d3440;
+  text-decoration: none;
+}
+
+.user-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
 }
