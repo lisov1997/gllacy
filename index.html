@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <title>Глейси – это магазин по продаже мороженого собственного производства</title>
   <link rel="stylesheet" href="./css/style.css">
-  <link rel="icon" type="image/png" sizes="32x32" href="favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="image/icon/favicon.png">
 </head>
 
 <body class="page-body">
@@ -65,7 +65,7 @@
         <ul class="additional-menu">
           <li class="additional-item">
 
-            <a class="additional-item-button search" href="#">
+            <button class="additional-item-button search" type="button">
               <span class="visually-hidden">Поиск по сайту</span>
               <svg class="additional-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17"
                 aria-hidden="true">
@@ -73,14 +73,14 @@
                   d="M2.66 8.19a4.67 4.67 0 1 1 9.34 0 4.67 4.67 0 0 1-9.34 0Zm8.42 4.69a6 6 0 1 1 .94-.94l2.45 2.44a.67.67 0 1 1-.94.95l-2.45-2.45Z"
                   clip-rule="evenodd" />
               </svg>
-            </a>
+            </button>
 
             <div class="popover popover-search">
               <form class="navigation-search-form" action="https://echo.htmlacademy.ru/" method="get">
                 <p class="field-group">
                   <label class="field" for="cite-search">
                     <input class="field-input" placeholder="Поиск по сайту" type="text" name="cite-search"
-                      id="cite-search">
+                      id="cite-search" required>
                   </label>
                 </p>
               </form>
@@ -110,13 +110,13 @@
                 <label class="field" for="popover-account-email">
                   <span class="visually-hidden">Ваш email</span>
                   <input class="field-input" type="email" name="popover-account-email" id="popover-account-email"
-                    value="email@example.com">
+                    value="email@example.com" required>
                 </label>
 
                 <label class="field" for="popover-account-password">
                   <span class="visually-hidden">Ваш пароль</span>
                   <input class="field-input" type="password" name="popover-account-password"
-                    id="popover-account-password" value="123456">
+                    id="popover-account-password" value="123456" required>
                 </label>
 
                 <div class="login-wrapper">
@@ -160,7 +160,7 @@
 
               <ul class="cart-list">
                 <li class="cart-item">
-                  <img class="cart-image" src="./image/catalog/card-image-1.png" alt="Малинка" width="46" height="46">
+                  <img class="cart-image" src="./image/catalog/card-image-1.jpg" alt="Малинка" width="46" height="46">
                   <div class="cart-description">
                     <p class="cart-title">Малинка</p>
                     <p class="cart-price">1 кг х 310 ₽</p>
@@ -171,7 +171,7 @@
                   </button>
                 </li>
                 <li class="cart-item">
-                  <img class="cart-image" src="./image/catalog/card-image-4.png" alt="Бабл-гам" width="46" height="46">
+                  <img class="cart-image" src="./image/catalog/card-image-4.jpg" alt="Бабл-гам" width="46" height="46">
                   <div class="cart-description">
                     <p class="cart-title">Бабл-гам</p>
                     <p class="cart-price">1,5 кг х 320 ₽</p>
@@ -184,7 +184,7 @@
               </ul>
 
               <div class="order-wrapper">
-                <button class="button additional-button">Оформить заказ</button>
+                <button class="button additional-button" type="button">Оформить заказ</button>
                 <p class="order-cost">Итого: 790 ₽</p>
               </div>
             </div>
@@ -226,7 +226,7 @@
             <img class="slider-image" src="./image/index/icecream-1.png" alt="Нежный пломбир
           с клубничным джемом" width="328" height="507">
             <div class="slider-controls">
-              <button class="slider-button slider-prev">
+              <button class="slider-button slider-prev" type="button">
                 <span class="visually-hidden">Предыдущее фото</span>
                 <svg class="slider-button-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                   viewBox="0 0 16 16" aria-hidden="true">
@@ -235,7 +235,7 @@
                     clip-rule="evenodd" />
                 </svg>
               </button>
-              <button class="slider-button slider-next">
+              <button class="slider-button slider-next" type="button">
                 <span class="visually-hidden">Следующее фото</span>
                 <svg class="slider-button-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                   viewBox="0 0 16 16" aria-hidden="true">
@@ -307,7 +307,8 @@
 
         <li class="promotional-item">
           <h3 class="promotional-title">Малинка даром!</h3>
-          <p class="promotional-desk">При покупке 2 кг любого фруктового мороженого добавим в ваш заказ <br> банку
+          <p class="promotional-desk">При покупке 2 кг любого фруктового мороженого добавим в ваш заказ <br>
+            банку
             малинового
             варенья бесплатно.</p>
           <a href="#" class="promotional-link button">Хочу подарок</a>
@@ -317,7 +318,8 @@
 
         <li class="promotional-item">
           <h3 class="promotional-title">Маршмеллоу даром!</h3>
-          <p class="promotional-desk">При покупке 2 кг пломбира добавим <br> в ваш заказ упаковку нежных зефирок
+          <p class="promotional-desk">При покупке 2 кг пломбира добавим <br> в ваш заказ упаковку нежных
+            зефирок
             совершенно
             бесплатно.</p>
           <a href="#" class="promotional-link button">Хочу подарок</a>
@@ -334,14 +336,14 @@
 
         <li class="card-item">
           <figure class="card-figure">
-            <img class="card-img" src="./image/catalog/card-image-1.png" alt="фото мороженого Малинка" width="168"
+            <img class="card-img" src="./image/catalog/card-image-1.jpg" alt="фото мороженого Малинка" width="168"
               height="168">
             <figcaption class="card-title">Малинка</figcaption>
           </figure>
           <p class="card-desk">Сливочное мороженое с малиновым джемом</p>
           <div class="card-user-wrapper">
             <p class="card-price">310 ₽/кг</p>
-            <a class="cart-btn" href="#">
+            <button class="cart-btn" type="button">
               <svg class="cart-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none"
                 viewBox="0 0 16 16" aria-hidden="true">
                 <path fill-rule="evenodd"
@@ -349,20 +351,20 @@
                   clip-rule="evenodd" />
               </svg>
               <span class="visually-hidden">Добавить в корзину</span>
-            </a>
+            </button>
           </div>
         </li>
 
         <li class="card-item">
           <figure class="card-figure">
-            <img class="card-img" src="./image/catalog/card-image-2.png" alt="фото мороженого Малинка" width="168"
+            <img class="card-img" src="./image/catalog/card-image-2.jpg" alt="фото мороженого Малинка" width="168"
               height="168">
             <figcaption class="card-title">Фисташка</figcaption>
           </figure>
           <p class="card-desk">Фисташковый пломбир с кусочками шоколада</p>
           <div class="card-user-wrapper">
             <p class="card-price">340 ₽/кг</p>
-            <a class="cart-btn" href="#">
+            <button class="cart-btn" type="button">
               <svg class="cart-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none"
                 viewBox="0 0 16 16" aria-hidden="true">
                 <path fill-rule="evenodd"
@@ -370,13 +372,13 @@
                   clip-rule="evenodd" />
               </svg>
               <span class="visually-hidden">Добавить в корзину</span>
-            </a>
+            </button>
           </div>
         </li>
 
         <li class="card-item">
           <figure class="card-figure">
-            <img class="card-img" src="./image/catalog/card-image-3.png" alt="фото мороженого Малинка" width="168"
+            <img class="card-img" src="./image/catalog/card-image-3.jpg" alt="фото мороженого Малинка" width="168"
               height="168">
             <figcaption class="card-title">Черника</figcaption>
           </figure>
@@ -384,7 +386,7 @@
             с черничным джемом</p>
           <div class="card-user-wrapper">
             <p class="card-price">330 ₽/кг</p>
-            <a class="cart-btn" href="#">
+            <button class="cart-btn" type="button">
               <svg class="cart-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none"
                 viewBox="0 0 16 16" aria-hidden="true">
                 <path fill-rule="evenodd"
@@ -392,13 +394,13 @@
                   clip-rule="evenodd" />
               </svg>
               <span class="visually-hidden">Добавить в корзину</span>
-            </a>
+            </button>
           </div>
         </li>
 
         <li class="card-item">
           <figure class="card-figure">
-            <img class="card-img" src="./image/catalog/card-image-4.png" alt="фото мороженого Малинка" width="168"
+            <img class="card-img" src="./image/catalog/card-image-4.jpg" alt="фото мороженого Малинка" width="168"
               height="168">
             <figcaption class="card-title">Бабл-гам</figcaption>
           </figure>
@@ -406,7 +408,7 @@
             со сладкой посыпкой</p>
           <div class="card-user-wrapper">
             <p class="card-price">320 ₽/кг</p>
-            <a class="cart-btn" href="#">
+            <button class="cart-btn" type="button">
               <svg class="cart-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none"
                 viewBox="0 0 16 16" aria-hidden="true">
                 <path fill-rule="evenodd"
@@ -414,7 +416,7 @@
                   clip-rule="evenodd" />
               </svg>
               <span class="visually-hidden">Добавить в корзину</span>
-            </a>
+            </button>
           </div>
         </li>
 
@@ -477,7 +479,7 @@
         <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
           <p class="field-group">
             <input class="field-input" type="email" placeholder="email@example.com" name="subscribe-email"
-              id="subscribe-email">
+              id="subscribe-email" required>
             <button class="subscribe-submit button additional-button" type="submit" value="Отправить">Отправить</button>
           </p>
         </form>
@@ -496,7 +498,8 @@
 
       <div class="form-wrapper">
 
-        <p class="delivery-form-info">Укажите адрес и дату доставки, и мы свяжемся <br> с вами, чтобы подтвердить
+        <p class="delivery-form-info">Укажите адрес и дату доставки, и мы свяжемся <br> с вами, чтобы
+          подтвердить
           заказ.</p>
 
         <form class="delivery-form" action="https://echo.htmlacademy.ru/courses" method="post">
@@ -511,7 +514,8 @@
                 <span class="info-text" role="tooltip" id="tooltip-label-date">Введите дату</span>
               </button>
             </span>
-            <input class=" field-input" type="text" name="delivery-date" id="delivery-date" placeholder="01.04.2020">
+            <input class=" field-input" type="text" name="delivery-date" id="delivery-date" placeholder="01.04.2020"
+              required>
           </p>
 
           <p class="field-group">
@@ -521,7 +525,7 @@
               </label>
             </span>
             <input class="field-input" type="text" name="delivery-telephone" id="delivery-telephone"
-              placeholder="+7 800 999-00-00">
+              placeholder="+7 800 999-00-00" required>
           </p>
 
           <p class="field-group delivery-form-adress">
@@ -531,12 +535,13 @@
               </label>
               <button class="info" type="button" aria-labelledby="tooltip-label-adress">
                 <span class="visually-hidden">Показать дополнительную информацию</span>
-                <span class="info-text" role="tooltip" id="tooltip-label-adress">Введите название <br> улицы, дома и
+                <span class="info-text" role="tooltip" id="tooltip-label-adress">Введите название <br>
+                  улицы, дома и
                   квартиры</span>
               </button>
             </span>
             <input class="field-input" type="text" name="delivery-adress" id="delivery-adress"
-              placeholder="ул. Большая Конюшенная, 19/8">
+              placeholder="ул. Большая Конюшенная, 19/8" required>
           </p>
 
           <div class="field-group delivery-button">
@@ -643,7 +648,7 @@
   <div class="modal-container modal-container-close">
     <div class="modal-feedback">
 
-      <button class="modal-close-button">
+      <button class="modal-close-button" type="button">
         <span class="visually-hidden">Закрыть модальное окно</span>
       </button>
 
@@ -655,19 +660,19 @@
           <label class="field" for="modal-feedback-name">
             <span class="visually-hidden">Ваши Имя и Фамилия</span>
             <input class="field-input" type="text" name="modal-feedback-name" id="modal-feedback-name"
-              placeholder="Имя и фамилия">
+              placeholder="Имя и фамилия" required>
           </label>
 
           <label class="field" for="modal-feedback-email">
             <span class="visually-hidden">Ваши Имя и Фамилия</span>
             <input class="field-input" type="email" name="modal-feedback-email" id="modal-feedback-email"
-              placeholder="email@example.com">
+              placeholder="email@example.com" required>
           </label>
 
           <label class="field" for="popover-account-feedback">
             <span class="visually-hidden">Напишите нам</span>
             <textarea class="field-input field-feedback" name="popover-account-feedback" id="popover-account-feedback"
-              placeholder="В свободной форме"></textarea>
+              placeholder="В свободной форме" required></textarea>
           </label>
           <div class="button-wrapper">
             <button class="modal-form-submit button additional-button" type="submit"

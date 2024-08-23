@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <title>Сливочное мороженое в каталоге магазина Глэйси</title>
   <link rel="stylesheet" href="./css/style.css">
-  <link rel="icon" type="image/png" sizes="32x32" href="favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="image/icon/favicon.png">
 </head>
 
 <body class="page-body">
@@ -79,7 +79,7 @@
         <ul class="additional-menu">
 
           <li class="additional-item">
-            <a class="additional-item-button search" href="#">
+            <button class="additional-item-button search" type="button">
               <span class="visually-hidden">Поиск по сайту</span>
               <svg class="additional-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17"
                 aria-hidden="true">
@@ -87,7 +87,7 @@
                   d="M2.66 8.19a4.67 4.67 0 1 1 9.34 0 4.67 4.67 0 0 1-9.34 0Zm8.42 4.69a6 6 0 1 1 .94-.94l2.45 2.44a.67.67 0 1 1-.94.95l-2.45-2.45Z"
                   clip-rule="evenodd" />
               </svg>
-            </a>
+            </button>
 
             <div class="popover popover-search">
 
@@ -95,7 +95,7 @@
 
                 <label class="field" for="cite-search">
                   <input class="field-input" placeholder="Поиск по сайту" type="text" name="cite-search"
-                    id="cite-search">
+                    id="cite-search" required>
                 </label>
               </form>
             </div>
@@ -124,13 +124,13 @@
                 <label class="field" for="popover-account-email">
                   <span class="visually-hidden">Ваш email</span>
                   <input class="field-input" type="email" name="popover-account-email" id="popover-account-email"
-                    value="email@example.com">
+                    value="email@example.com" required>
                 </label>
 
                 <label class="field" for="popover-account-password">
                   <span class="visually-hidden">Ваш пароль</span>
                   <input class="field-input" type="password" name="popover-account-password"
-                    id="popover-account-password" value="123456">
+                    id="popover-account-password" value="123456" required>
                 </label>
 
                 <div class="login-wrapper">
@@ -173,7 +173,7 @@
               <ul class="cart-list">
 
                 <li class="cart-item">
-                  <img class="cart-image" src="./image/catalog/card-image-1.png" alt="Малинка" width="46" height="46">
+                  <img class="cart-image" src="./image/catalog/card-image-1.jpg" alt="Малинка" width="46" height="46">
                   <div class="cart-description">
                     <p class="cart-title">Малинка</p>
                     <p class="cart-price">1 кг х 310 ₽</p>
@@ -185,7 +185,7 @@
                 </li>
 
                 <li class="cart-item">
-                  <img class="cart-image" src="./image/catalog/card-image-4.png" alt="Бабл-гам" width="46" height="46">
+                  <img class="cart-image" src="./image/catalog/card-image-4.jpg" alt="Бабл-гам" width="46" height="46">
                   <div class="cart-description">
                     <p class="cart-title">Бабл-гам</p>
                     <p class="cart-price">1,5 кг х 320 ₽</p>
@@ -263,17 +263,22 @@
           </fieldset>
 
           <fieldset class="catalog-filter-group cost-filter-group">
-            <legend class="catalog-filter-title">Цена:
-
-              <span class="cost-min">
-                100
-              </span>
-              ₽ –
-              <span class="cost-max">
-                500
-              </span>
-              ₽
+            <legend class="catalog-filter-title visually-hidden">
             </legend>
+            <div class="range-wrapper-inputs">
+
+              <label for="min-price" class="catalog-filter-label">
+                Цена:
+                <input class="range-input" type="number" value="100" name="min-price" id="min-price">
+                ₽
+              </label>
+
+              <label for="max-price" class="catalog-filter-label">
+                –
+                <input class="range-input" type="number" value="500" name="max-price" id="max-price">
+                ₽
+              </label>
+            </div>
 
             <div class=" range">
 
@@ -397,7 +402,7 @@
         <li class="card-item">
 
           <figure class="card-figure">
-            <img class="card-img" src="./image/catalog/card-image-1.png" alt="фото мороженого Малинка" width="168"
+            <img class="card-img" src="./image/catalog/card-image-1.jpg" alt="фото мороженого Малинка" width="168"
               height="168">
             <figcaption class="card-title">Малинка</figcaption>
           </figure>
@@ -406,7 +411,7 @@
 
           <div class="card-user-wrapper">
             <p class="card-price">310 ₽/кг</p>
-            <a class="cart-btn" href="#">
+            <button class="cart-btn" type="button">
               <svg class="cart-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none"
                 viewBox="0 0 16 16" aria-hidden="true">
                 <path fill-rule="evenodd"
@@ -414,14 +419,14 @@
                   clip-rule="evenodd" />
               </svg>
               <span class="visually-hidden">Добавить в корзину</span>
-            </a>
+            </button>
           </div>
         </li>
 
         <li class="card-item">
 
           <figure class="card-figure">
-            <img class="card-img" src="./image/catalog/card-image-2.png" alt="фото мороженого Фисташка" width="168"
+            <img class="card-img" src="./image/catalog/card-image-2.jpg" alt="фото мороженого Фисташка" width="168"
               height="168">
             <figcaption class="card-title">Фисташка</figcaption>
           </figure>
@@ -430,7 +435,7 @@
 
           <div class="card-user-wrapper">
             <p class="card-price">340 ₽/кг</p>
-            <a class="cart-btn" href="#">
+            <button class="cart-btn" type="button">
               <svg class="cart-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none"
                 viewBox="0 0 16 16" aria-hidden="true">
                 <path fill-rule="evenodd"
@@ -438,14 +443,14 @@
                   clip-rule="evenodd" />
               </svg>
               <span class="visually-hidden">Добавить в корзину</span>
-            </a>
+            </button>
           </div>
         </li>
 
         <li class="card-item">
 
           <figure class="card-figure">
-            <img class="card-img" src="./image/catalog/card-image-3.png" alt="фото мороженого Черника" width="168"
+            <img class="card-img" src="./image/catalog/card-image-3.jpg" alt="фото мороженого Черника" width="168"
               height="168">
             <figcaption class="card-title">Черника</figcaption>
           </figure>
@@ -455,7 +460,7 @@
 
           <div class="card-user-wrapper">
             <p class="card-price">330 ₽/кг</p>
-            <a class="cart-btn" href="#">
+            <button class="cart-btn" type="button">
               <svg class="cart-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none"
                 viewBox="0 0 16 16" aria-hidden="true">
                 <path fill-rule="evenodd"
@@ -463,14 +468,14 @@
                   clip-rule="evenodd" />
               </svg>
               <span class="visually-hidden">Добавить в корзину</span>
-            </a>
+            </button>
           </div>
         </li>
 
         <li class="card-item">
 
           <figure class="card-figure">
-            <img class="card-img" src="./image/catalog/card-image-4.png" alt="фото мороженого Бабл-гам" width="168"
+            <img class="card-img" src="./image/catalog/card-image-4.jpg" alt="фото мороженого Бабл-гам" width="168"
               height="168">
             <figcaption class="card-title">Бабл-гам</figcaption>
           </figure>
@@ -479,7 +484,7 @@
 
           <div class="card-user-wrapper">
             <p class="card-price">320 ₽/кг</p>
-            <a class="cart-btn" href="#">
+            <button class="cart-btn" type="button">
               <svg class="cart-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none"
                 viewBox="0 0 16 16" aria-hidden="true">
                 <path fill-rule="evenodd"
@@ -487,13 +492,13 @@
                   clip-rule="evenodd" />
               </svg>
               <span class="visually-hidden">Добавить в корзину</span>
-            </a>
+            </button>
           </div>
         </li>
         <li class="card-item">
 
           <figure class="card-figure">
-            <img class="card-img" src="./image/catalog/card-image-5.png" alt="фото мороженого Ежевика" width="168"
+            <img class="card-img" src="./image/catalog/card-image-5.jpg" alt="фото мороженого Ежевика" width="168"
               height="168">
             <figcaption class="card-title">Ежевика</figcaption>
           </figure>
@@ -502,7 +507,7 @@
 
           <div class="card-user-wrapper">
             <p class="card-price">330 ₽/кг</p>
-            <a class="cart-btn" href="#">
+            <button class="cart-btn" type="button">
               <svg class="cart-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none"
                 viewBox="0 0 16 16" aria-hidden="true">
                 <path fill-rule="evenodd"
@@ -510,14 +515,14 @@
                   clip-rule="evenodd" />
               </svg>
               <span class="visually-hidden">Добавить в корзину</span>
-            </a>
+            </button>
           </div>
         </li>
 
         <li class="card-item">
 
           <figure class="card-figure">
-            <img class="card-img" src="./image/catalog/card-image-6.png" alt="фото мороженого Банан" width="168"
+            <img class="card-img" src="./image/catalog/card-image-6.jpg" alt="фото мороженого Банан" width="168"
               height="168">
             <figcaption class="card-title">Банан</figcaption>
           </figure>
@@ -527,7 +532,7 @@
 
           <div class="card-user-wrapper">
             <p class="card-price">340 ₽/кг</p>
-            <a class="cart-btn" href="#">
+            <button class="cart-btn" type="button">
               <svg class="cart-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none"
                 viewBox="0 0 16 16" aria-hidden="true">
                 <path fill-rule="evenodd"
@@ -535,13 +540,13 @@
                   clip-rule="evenodd" />
               </svg>
               <span class="visually-hidden">Добавить в корзину</span>
-            </a>
+            </button>
           </div>
         </li>
         <li class="card-item">
 
           <figure class="card-figure">
-            <img class="card-img" src="./image/catalog/card-image-7.png" alt="фото мороженого Шоколадка" width="168"
+            <img class="card-img" src="./image/catalog/card-image-7.jpg" alt="фото мороженого Шоколадка" width="168"
               height="168">
             <figcaption class="card-title">Шоколадка</figcaption>
           </figure>
@@ -549,7 +554,7 @@
           <p class="card-desk">Классический шоколадный пломбир</p>
           <div class="card-user-wrapper">
             <p class="card-price">270 ₽/кг</p>
-            <a class="cart-btn" href="#">
+            <button class="cart-btn" type="button">
               <svg class="cart-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none"
                 viewBox="0 0 16 16" aria-hidden="true">
                 <path fill-rule="evenodd"
@@ -557,14 +562,14 @@
                   clip-rule="evenodd" />
               </svg>
               <span class="visually-hidden">Добавить в корзину</span>
-            </a>
+            </button>
           </div>
         </li>
 
         <li class="card-item">
 
           <figure class="card-figure">
-            <img class="card-img" src="./image/catalog/card-image-8.png" alt="фото мороженого Клубничка" width="168"
+            <img class="card-img" src="./image/catalog/card-image-8.jpg" alt="фото мороженого Клубничка" width="168"
               height="168">
             <figcaption class="card-title">Клубничка</figcaption>
           </figure>
@@ -574,7 +579,7 @@
 
           <div class="card-user-wrapper">
             <p class="card-price">300 ₽/кг</p>
-            <a class="cart-btn" href="#">
+            <button class="cart-btn" type="button">
               <svg class="cart-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none"
                 viewBox="0 0 16 16" aria-hidden="true">
                 <path fill-rule="evenodd"
@@ -582,14 +587,14 @@
                   clip-rule="evenodd" />
               </svg>
               <span class="visually-hidden">Добавить в корзину</span>
-            </a>
+            </button>
           </div>
         </li>
 
         <li class="card-item">
 
           <figure class="card-figure">
-            <img class="card-img" src="./image/catalog/card-image-9.png" alt="фото мороженого Лимон" width="168"
+            <img class="card-img" src="./image/catalog/card-image-9.jpg" alt="фото мороженого Лимон" width="168"
               height="168">
             <figcaption class="card-title">Лимон</figcaption>
           </figure>
@@ -598,7 +603,7 @@
 
           <div class="card-user-wrapper">
             <p class="card-price">310 ₽/кг</p>
-            <a class="cart-btn" href="#">
+            <button class="cart-btn" type="button">
               <svg class="cart-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none"
                 viewBox="0 0 16 16" aria-hidden="true">
                 <path fill-rule="evenodd"
@@ -606,14 +611,14 @@
                   clip-rule="evenodd" />
               </svg>
               <span class="visually-hidden">Добавить в корзину</span>
-            </a>
+            </button>
           </div>
         </li>
 
         <li class="card-item">
 
           <figure class="card-figure">
-            <img class="card-img" src="./image/catalog/card-image-10.png" alt="фото мороженого Ментол" width="168"
+            <img class="card-img" src="./image/catalog/card-image-10.jpg" alt="фото мороженого Ментол" width="168"
               height="168">
             <figcaption class="card-title">Ментол</figcaption>
           </figure>
@@ -623,7 +628,7 @@
 
           <div class="card-user-wrapper">
             <p class="card-price">320 ₽/кг</p>
-            <a class="cart-btn" href="#">
+            <button class="cart-btn" type="button">
               <svg class="cart-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none"
                 viewBox="0 0 16 16" aria-hidden="true">
                 <path fill-rule="evenodd"
@@ -631,14 +636,14 @@
                   clip-rule="evenodd" />
               </svg>
               <span class="visually-hidden">Добавить в корзину</span>
-            </a>
+            </button>
           </div>
         </li>
 
         <li class="card-item">
 
           <figure class="card-figure">
-            <img class="card-img" src="./image/catalog/card-image-11.png" alt="фото мороженого Орешек" width="168"
+            <img class="card-img" src="./image/catalog/card-image-11.jpg" alt="фото мороженого Орешек" width="168"
               height="168">
             <figcaption class="card-title">Орешек</figcaption>
           </figure>
@@ -647,7 +652,7 @@
 
           <div class="card-user-wrapper">
             <p class="card-price">360 ₽/кг</p>
-            <a class="cart-btn" href="#">
+            <button class="cart-btn" type="button">
               <svg class="cart-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none"
                 viewBox="0 0 16 16" aria-hidden="true">
                 <path fill-rule="evenodd"
@@ -655,14 +660,14 @@
                   clip-rule="evenodd" />
               </svg>
               <span class="visually-hidden">Добавить в корзину</span>
-            </a>
+            </button>
           </div>
         </li>
 
         <li class="card-item">
 
           <figure class="card-figure">
-            <img class="card-img" src="./image/catalog/card-image-12.png" alt="фото мороженого Крем-брюле" width="168"
+            <img class="card-img" src="./image/catalog/card-image-12.jpg" alt="фото мороженого Крем-брюле" width="168"
               height="168">
             <figcaption class="card-title">Крем-брюле</figcaption>
           </figure>
@@ -671,7 +676,7 @@
 
           <div class="card-user-wrapper">
             <p class="card-price">280 ₽/кг</p>
-            <a class="cart-btn" href="#">
+            <button class="cart-btn" type="button">
               <svg class="cart-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none"
                 viewBox="0 0 16 16" aria-hidden="true">
                 <path fill-rule="evenodd"
@@ -679,7 +684,7 @@
                   clip-rule="evenodd" />
               </svg>
               <span class="visually-hidden">Добавить в корзину</span>
-            </a>
+            </button>
           </div>
         </li>
 
